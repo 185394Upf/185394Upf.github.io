@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" href="assets/multimedia/icons/home.png">
+    <link rel="stylesheet" href="css/style.css" id="stylesheet">
+    <script src="js/script.js" defer></script>
+    <!-- 
+    • Página inicial com uma breve introdução ao blog.
+    • Uma seção de “Últimas Postagens” (pode ser estática, simulando um feed). 
+    -->
+  </head>
+
+  <body>
+    <nav class="menu-nav">
+      <span>
+            <a href="index.html" class="icone-nav"><img src="assets/multimedia/icons/home.png" alt="Icone Home" class="img-nav">
+            <figcaption class="link-nav">Home</figcaption></a>
+
+            <a href="./pages/receitas.html" class="icone-nav"><img src="assets/multimedia/icons/receitas.png" alt="Icone Receitas" class="img-nav">
+            <figcaption class="link-nav">Receitas</figcaption></a>
+
+            <a href="./pages/contact.html" class="icone-nav"><img src="assets/multimedia/icons/contact.png" alt="Icone Contato" class="img-nav">
+            <figcaption class="link-nav">Contato</figcaption></a>
+
+            <a href="./pages/about.html" class="icone-nav"><img src="assets/multimedia/icons/about.png" alt="Icone Sobre" class="img-nav">
+            <figcaption class="link-nav">Sobre</figcaption></a>
+              
+            <a href="./pages/curriculum.html" class="icone-nav"><img src="assets/multimedia/icons/curriculum.png" alt="Icone Curriculo" class="img-nav">
+            <figcaption class="link-nav">Currículo</figcaption></a>
+      </span>
+      <span>
+        <button class="botao-fonte" id="diminuirFonte"><img src="assets/multimedia/icons/text-decrease.svg" style="width: 32px; height: 32px;" alt="Diminuir Fonte"></button>
+        <button class="botao-fonte" id="aumentarFonte"><img src="assets/multimedia/icons/text-increase.svg" style="width: 32px; height: 32px;" alt="Aumentar Fonte"></button>
+        <button class="trocar-tema"><img src="assets/multimedia/icons/lightmode.png" id="icone-trocar-tema" alt="Trocar Tema"></button>
+      </span>
+    </nav>
+
+      <main>
+        <div class="caixa-sombra" id="post1">
+          <div class="caixa-vidro">
+            <div class="header-vidro">
+              <span class="header-texto">
+                <img src="assets/multimedia/icons/home.png" alt="Icone Home">
+                Boas Vindas - Home</span>
+              <button class="botao-exit" onclick="errorSFX()">X</button>
+            </div>
+            <div class="caixa">
+              <h1>Bem-vindo ao meu blog!</h1>
+              <h2>Post fixado</h2>
+              <p>
+                Seja bem-vindo ao meu blog! Aqui você terá acesso a informações sobre minhas experiências e paixões, além de um conjunto de receitas deliciosas 
+                (o mousse de maracujá é o melhor, altamente recomendado).
+              </p>
+              <p>
+                Talvez você perceba que o site parece ter saído de uma máquina do tempo, ou cheira a algo empoeirado que dá vontade de espirrar. Sim, eu acredito 
+                que existe um encanto em interfaces singelas, céus azuis e janelas translúcidas. Mesmo que elas sejam, hoje, consideradas por muitos uma afronta à 
+                boa estética. Eu nasci no final desta era de ouro, e desfrutei dela por relativamente pouco tempo, mas mesmo assim sinto uma nostalgia pelo espírito 
+                otimista da informática dos anos 2000.
+              </p>
+              <p>
+                Este pequeno blog foi pensado como uma homenagem a essa época, em que sentar em frente a um computador era uma experiência mágica, um evento por si só. 
+                Era uma época em que a tecnologia parecia abrir infinitas portas, sem, ao mesmo tempo, se tornar uma tirana da vida cotidiana. Seu PC, uma coisa 
+                quadrada, feia, com um monitor de tubo, era um amigo leal, mas respeitoso. Ele estava sempre ali, te esperando ao final de um dia, para desbravarem juntos 
+                a nova fronteira digital, e, quando decidisse que tivera o suficiente, ele se recolhia, e te deixava em paz. Era uma relação inocente, de curiosidade bem 
+                dosada; uma que, olhando para trás, parece quase impossível de imaginar.
+              </p>
+              <p>
+                Finalizada essa introdução desnecessariamente melosa e divagante, você pode encontrar mais informações sobre este blog nos artigos abaixo. Espero que goste!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="caixa-sombra" id="post2">
+          <div class="caixa-vidro">
+            <div class="header-vidro">
+              <span class="header-texto">
+                <img src="assets/multimedia/icons/receitas.png" alt="Icone Receitas">
+                Mousse de Maracujá - Receitas</span>
+              <button class="botao-exit" onclick="errorSFX()">X</button>
+            </div>
+            <div class="caixa">
+              <h1>Receita de Mousse de Maracujá</h1>
+              <h2>Imperdível!</h2>
+              <p>
+                Com apenas uma lata de leite condensando, creme de leite, suco de maracujá concentrado e meia xícara de água, você pode criar uma sobremesa deliciosa e refrescante.
+              </p>
+              <p>
+                Prof. Pablo Leon Rodrigues recomenda!
+              </p>
+              <p>
+                <a href="./pages/receita-mousse.html">Clique aqui</a> e acesse a receita completa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="caixa-sombra" id="post3">
+          <div class="caixa-vidro">
+            <div class="header-vidro">
+              <span class="header-texto">
+                <img src="assets/multimedia/icons/home.png" alt="Icone Home">
+                Suporte Mobile? - Home</span>
+              <button class="botao-exit" onclick="errorSFX()">X</button>
+            </div>
+            <div class="caixa">
+              <h1>Suporte Mobile?</h1>
+              <h2>Vai ter que esperar...</h2>
+              <p>Não, o design do blog não foi desenvolvido com dispositivos móveis em mente.</p>
+              <p>Como trabalho da primeira disciplina referente a Desenvolvimento Web, o blog foi projetado para funcionar apenas em ambientes desktop. Talvez, no futuro, 
+                quando estiver mais avançado no curso, eu possa revisitar esse blog e implementar essa nova funcionalidade.</p>
+              <p>Em seu estado atual, o site foi desenvolvido em um ambiente de desktop e testado nos browsers Brave e Chrome.</p>
+              <img src="./assets/multimedia/img/celular.jpg" alt="Celular" class="img-caixa">
+            </div>
+          </div>
+        </div>
+
+        <div class="caixa-sombra" id="post4">
+          <div class="caixa-vidro">
+            <div class="header-vidro">
+              <span class="header-texto">
+                <img src="assets/multimedia/icons/home.png" alt="Icone Home">
+                Caixa de Chat - Home</span>
+              <button class="botao-exit" onclick="errorSFX()">X</button>
+            </div>
+            <div class="caixa">
+              <h1>Caixa de Chat</h1>
+              <h2>Funciona mesmo?</h2>
+              <p>Bem... Também não.</p>
+              <p>O chat é apenas simulado. Você pode escrever na caixa de texto, e clicar no botão ou pressionar enter para "enviar" uma mensagem no chat. Na realidade, não há conexão 
+                com nenhum servidor de chat, ou qualquer tipo de interlocutor.</p>
+              <p>O intuito era apenas adicionar mais um elemento interativo que ajudasse a construir uma atmosfera de blog 
+                dos anos 2000, que não raro, contavam com chats. Eram, admitidamente, chats muito diferentes do tipo de comunicação instantânea que temos hoje. Eram assíncronos, 
+                simplistas e frequentemente não possuíam "threads", ou seja, eram apenas discussões linears, linhas de comentários que estendiam-se do topo ao fim do chat sem 
+                compartimentalização. Estas limitações criavam um ambiente de comunicação mais pessoal e sem filtros, com senso de comunidade restrito.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="caixa-sombra" id="post5">
+          <div class="caixa-vidro">
+            <div class="header-vidro">
+              <span class="header-texto">
+                <img src="assets/multimedia/icons/home.png" alt="Icone Home">
+                Uso de Inteligência Artificial - Home</span>
+              <button class="botao-exit" onclick="errorSFX()">X</button>
+            </div>
+            <div class="caixa">
+              <h1>Uso de Inteligência Artificial</h1>
+              <h2>Transparência não é só glassmorphism</h2>
+              <p>Você pode estar se perguntando se utilizei assistência de IA para desenvolver esse blog. No caso de não estar se perguntando isso, receio que acabo de criar um problema onde 
+                não havia nenhum, mas já que trouxe o assunto, vamos lá.</p>
+              <p>A assistência de IA, nomeadamente Gemini, foi utilizada para preencher certas lacunas de conhecimento que surgiram durante o desenvolvimento quando decidi me aventurar 
+                por áreas que não domino. Para entender como usar algumas propriedades mais técnicas e "opacas" do CSS, como <i>linear-gradient</i>, <i>box-shadow</i> e <i>flex</i> (atalho de 
+                <i>flex-grow, flex-shrink</i> e <i>flex-basis</i>) procurei ajuda no Gemini (muitas vezes através do "AI Mode" do Google Search), como maneira, principalmente, de poupar tempo 
+                procurando por explicações em sites e fórums. Outro desafio foi a implementação do chat simulado, dos áudios que tocam ao clicar nos botões e de outras funcionalidades do 
+                JavaScript. Novamente recorri ao Gemini e para entender como implementar estas funcionalidades simples, que pensava dar um ar de maior interatividade ao site e também serviram 
+                como um bom experimento de aprendizado de modo geral.</p>
+              <p>Em nenhum momento o intuito foi deixar que a IA realizasse o trabalho para mim. Afinal, isso acabaria com o propósito de aprendizagem proposto pela atividade, que, por sinal, 
+                foi muito divertido. O que eu busquei, e acredito ter conseguido, foi usar a IA como uma ferramenta de pesquisa prática e ágil para possibilitar o aprendizado durante a 
+                atividade, sem prejuízo para o exercício das minhas habilidades individuais como desenvolvedor.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <aside>
+        <div class="aside-sombra">
+          <div class="caixa-vidro" style="width: 397px;">
+            <div class="header-vidro">
+              <span class="header-texto">
+              <img src="assets/multimedia/icons/home.png" alt="Icone Home">
+              Índice - Home</span>
+              <button class="botao-exit" onclick="errorSFX()">X</button>
+            </div>
+            <div class="aside-indice">
+              <ol>
+                <li><a href="#post1">Boas Vindas</a></li>
+                <li><a href="#post2">Mousse de Maracujá</a></li>
+                <li><a href="#post3">Suporte Mobile?</a></li>
+                <li><a href="#post4">Caixa de Chat</a></li>
+                <li><a href="#post5">Uso de Inteligência Artificial</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="aside-sombra" style="margin-top: 0;">
+          <div class="caixa-vidro">
+            <div class="header-vidro">
+              <span class="header-texto">
+              <img src="assets/multimedia/icons/home.png" alt="Icone Home">
+              Chat - Home</span>
+              <button class="botao-exit" onclick="errorSFX()">X</button>
+            </div>
+            <div class="aside-caixa">
+              <div id="caixa-chat"> 
+                <p><b>[CaraLegal02]: </b> Oi, tudo bem? Adorei o blog!<br></p>
+                <p><b>[RBalsan04]: </b> Oi, tudo ótimo! ☺ Fico feliz que tenha gostado do blog, espero que as receitas sejam úteis para você!<br></p>
+                <p><b>[MousseLover94]: </b> A receita de mousse de maracujá é maravilhosa, já fiz aqui em casa e todo mundo amou! ♥♥♥  <br></p>
+                <p><b>[CaraLegal02]: </b> Quero muito experimentar essa receita. Tentei fazer o brigadeiro de colher, mas quase estourei a tijela na hora de passar na água gelada.</p>
+              </div>
+              <div id="interface-chat">
+                <textarea id="digitar-chat" placeholder="Digite sua mensagem..."></textarea>
+                <button onclick="adicionarMensagem();" id="enviar-chat">→</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <footer>
+        <div class="footer">
+          <div class="footer-conteudo">
+            <div class="footer-link">
+              <a href="https://www.linkedin.com/in/rafael-balsan-80b7072b7/" target="_blank"><img src="./assets/multimedia/icons/linkedin.png" alt="LinkedIn" class="icone-footer"></a>
+              <a href="https://github.com/RafaelBalsan" target="_blank"><img src="./assets/multimedia/icons/github.png" alt="GitHub" class="icone-footer"></a>
+              <a href="https://www.instagram.com/rafael.balsan/" target="_blank"><img src="./assets/multimedia/icons/instagram.png" alt="Instagram" class="icone-footer"></a>
+              <a href="pages/aviso.html" target="_blank"><img src="./assets/multimedia/icons/whatsapp.png" alt="WhatsApp" class="icone-footer"></a>
+              <a href="https://profile.indeed.com/p/rafaelb-m2kbxpz" target="_blank"><img src="./assets/multimedia/icons/indeed.png" alt="Indeed" class="icone-footer"></a>
+            </div>
+            <div class="footer-texto">
+              Rafael Balsan © 2026 Todos os direitos reservados.
+            </div>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

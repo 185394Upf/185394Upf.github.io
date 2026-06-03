@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+        <link rel="icon" href="../assets/multimedia/icons/contact.png">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/script.js" defer></script>
+        <!-- 
+        • Página contendo um formulário estruturado para contato
+        -->
+    </head>
+
+    <body>
+    <nav class="menu-nav">
+        <span>
+            <a href="../index.html" class="icone-nav"><img src="../assets/multimedia/icons/home.png" alt="Icone Home" class="img-nav">
+            <figcaption class="link-nav">Home</figcaption></a>
+
+            <a href="receitas.html" class="icone-nav"><img src="../assets/multimedia/icons/receitas.png" alt="Icone Receitas" class="img-nav">
+            <figcaption class="link-nav">Receitas</figcaption></a>
+
+            <a href="contact.html" class="icone-nav"><img src="../assets/multimedia/icons/contact.png" alt="Icone Contato" class="img-nav">
+            <figcaption class="link-nav">Contato</figcaption></a>
+
+            <a href="about.html" class="icone-nav"><img src="../assets/multimedia/icons/about.png" alt="Icone Sobre" class="img-nav">
+            <figcaption class="link-nav">Sobre</figcaption></a>
+                
+            <a href="curriculum.html" class="icone-nav"><img src="../assets/multimedia/icons/curriculum.png" alt="Icone Curriculo" class="img-nav">
+            <figcaption class="link-nav">Currículo</figcaption></a>
+        </span>
+        <span>
+          <button class="botao-fonte" id="diminuirFonte"><img src="../assets/multimedia/icons/text-decrease.svg" style="width: 32px; height: 32px;" alt="Diminuir Fonte"></button>
+          <button class="botao-fonte" id="aumentarFonte"><img src="../assets/multimedia/icons/text-increase.svg" style="width: 32px; height: 32px;" alt="Aumentar Fonte"></button>
+          <button class="trocar-tema"><img src="assets/multimedia/icons/lightmode.png" id="icone-trocar-tema" alt="Trocar Tema"></button>
+        </span>
+    </nav>
+
+    <main>
+      <div class="caixa-sombra">
+        <div class="caixa-vidro">
+          <div class="header-vidro">
+          <span class="header-texto">
+            <img src="../assets/multimedia/icons/contact.png" alt="Icone Contato">
+            Informativo - Contato</span>
+          <button class="botao-exit" onclick="errorSFX()">X</button>
+          </div>
+          <div class="caixa">
+            <h1>Entre em Contato</h1>
+            <h2>Preencha o formulário!</h2>
+            <p>Se você tiver alguma dúvida, sugestão ou quiser entrar em contato comigo, por favor, preencha o formulário ao lado. Estou sempre aberto a ouvir suas 
+              opiniões e responder às suas perguntas. Obrigado por visitar meu site!</p>
+            <ul>
+              <li><b>Meu Nome: </b> Rafael Balsan</li>
+              <li><b>Meu Email: </b> rafaelbalsannd@gmail.com</li>
+              <li><b>Meu Telefone: </b> (55) +54 99636-4808 <sup><a href="aviso.html">(?)</a></sup></li>
+            </ul>
+            <p>Ou clique nos links abaixo para acessar diretamente:</p>
+            <ul style="margin-top: 0;">
+              <li><b>Meu </b><a href="aviso.html" target="_blank">WhatsApp</a></li>
+              <li><b>Meu </b><a href="https://www.instagram.com/rafael.balsan/" target="_blank">Instagram</a></li>
+              <li><b>Meu </b><a href="https://profile.indeed.com/p/rafaelb-m2kbxpz" target="_blank">Indeed</a></li>
+              <li><b>Meu </b><a href="https://www.linkedin.com/in/rafael-balsan-80b7072b7/" target="_blank">LinkedIn</a></li>
+              <li><b>Meu </b><a href="https://github.com/RafaelBalsan" target="_blank">GitHub Acadêmico</a></li>
+              <li><b>Meu </b><a href="https://github.com/Marduk21" target="_blank">GitHub Pessoal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+      <aside>
+        <div class="aside-sombra">
+          <div class="caixa-vidro">
+            <div class="header-vidro">
+              <span class="header-texto">
+              <img src="../assets/multimedia/icons/contact.png" alt="Icone Contato">
+              Formulário de Contato</span>
+              <button class="botao-exit" onclick="errorSFX()">X</button>
+            </div>
+            <div class="aside-form">
+                <h1 style="margin-bottom: 18px">Formulário</h1>
+              <form id="formContato">
+                <label for="nome" style="align-self: start;">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo..." required><br>
+
+                <label for="email" style="align-self: start;">Email:</label>
+                <input type="email" id="email" name="email" placeholder="seu.nome@email.com" required><br>
+
+                <label for="fone" style="align-self: start;">Telefone:</label>
+                <input type="tel" id="fone" name="fone" placeholder="(11) 99999-9999" pattern="[-0-9() ]+" required><br>
+
+                <label for="msg" style="align-self: start;">Mensagem:</label>
+                <textarea id="msg" name="msg" rows="5" required style="resize: none;" placeholder="Digite sua mensagem aqui..."></textarea><br>
+
+                <button type="submit" 
+                  id="enviarForm"
+                  style="width: 100px; height: 46px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                  Enviar
+                </button> 
+              </form>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <footer>
+        <div class="footer">
+          <div class="footer-conteudo">
+            <div class="footer-link">
+              <a href="https://www.linkedin.com/in/rafael-balsan-80b7072b7/" target="_blank"><img src="../assets/multimedia/icons/linkedin.png" alt="LinkedIn" class="icone-footer"></a>
+              <a href="https://github.com/RafaelBalsan" target="_blank"><img src="../assets/multimedia/icons/github.png" alt="GitHub" class="icone-footer"></a>
+              <a href="https://www.instagram.com/rafael.balsan/" target="_blank"><img src="../assets/multimedia/icons/instagram.png" alt="Instagram" class="icone-footer"></a>
+              <a href="aviso.html" target="_blank"><img src="../assets/multimedia/icons/whatsapp.png" alt="WhatsApp" class="icone-footer"></a>
+              <a href="https://profile.indeed.com/p/rafaelb-m2kbxpz" target="_blank"><img src="../assets/multimedia/icons/indeed.png" alt="Indeed" class="icone-footer"></a>
+            </div>
+            <div class="footer-texto">
+              Rafael Balsan © 2026 Todos os direitos reservados.
+            </div>
+          </div>
+        </div>
+      </footer>
+
+<script>
+// Script para feedback sonoro do botão de envio do formulário.
+  let formContato = document.getElementById('formContato');
+  let enviarForm = document.getElementById('enviarForm');
+  let audioSucesso = new Audio('../assets/multimedia/audio/formsuccess.wav');
+  let audioErro = new Audio('../assets/multimedia/audio/formfailure.wav');
+
+  enviarForm.addEventListener('click', function() {
+      if (!formContato.checkValidity()) {
+          audioErro.currentTime = 0;
+          audioErro.play();
+      }
+  });
+
+  formContato.addEventListener('submit', function(event) {
+      event.preventDefault(); // ATENÇÃO: Esta linha impede o envio real do formulário. Remova-a para permitir o envio.
+      formContato.reset(); // Limpa os campos do formulário para SIMULAR o envio. Também pode ser removida se o envio real for implementado.
+
+      audioSucesso.currentTime = 0;
+      audioSucesso.play();
+  });
+</script>
+    </body>
+</html>
