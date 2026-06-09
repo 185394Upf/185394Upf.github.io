@@ -311,8 +311,8 @@ main {
     justify-content: center;
     
     position: absolute;
-    bottom: 0;
     left: 0;
+    bottom: 0;
     width: 100%;
     min-height: 104px;
 
@@ -755,6 +755,7 @@ table, th, td {
     width: 100%;
     max-width: 345px;
     min-height: 55.2vh;
+    max-height: 510px;
 
     border-radius: 6px;
     overflow: hidden;
